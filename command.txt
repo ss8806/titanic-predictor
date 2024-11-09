@@ -1,0 +1,23 @@
+titanic_predictor
+
+
+仮想
+python3 -m venv myvenv
+source myvenv/bin/activate
+deactivate
+
+
+バックエンド作成
+pip install fastapi uvicorn scikit-learn pandas joblib
+python train_model.py
+
+
+フロントエンド作成
+npx create-react-app frontend 
+cd frontend
+npm install axios
+
+
+サーバー起動
+uvicorn main:app --reload
+npm start
